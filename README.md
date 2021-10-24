@@ -69,3 +69,29 @@ BasicItemController class 안에 컨트롤러들을 전부 구현하였습니다
 ​    
 
 롬복을 사용하여 좀더 깔끔한 코드를 구현하려 하였습니다.
+
+
+
+상품 목록 페이지를 먼저 살펴봅시다.
+
+![상품 목록](https://user-images.githubusercontent.com/60593969/138593582-c8a1d02f-4d3c-4063-8832-a0253457ccb3.png)
+
+이후 목록페이지에서 상품 등록 버튼을 누르면 하단의 등록 폼 으로 이동하게 됩니다.
+
+![상품등록](https://user-images.githubusercontent.com/60593969/138593623-05e23fb3-7b76-489e-af58-cd22bbc8523c.png)
+
+원하는 정보를 입력후 상품 등록 버튼을 누르면 저장완료가 나오는것을 확인할수 있습니다.
+
+![저장완료](https://user-images.githubusercontent.com/60593969/138593638-fdda1e18-7d42-4f63-8191-398487a4303c.png)
+
+이후 다시 삭제를 위해서도 상세 폼으로 올수 있습니다.
+
+![상품 삭제](https://user-images.githubusercontent.com/60593969/138593659-98204186-f63f-410c-90fd-54de0ea1a3e9.png)
+
+위의 상세 폼에서 삭제 버튼을 누르면 다음 확인 화면으로 이동합니다.
+
+![삭제확인](https://user-images.githubusercontent.com/60593969/138593721-c0895a07-93c5-44bc-8ee9-51825ad512e4.png)
+
+이후 삭제하기를 누른다면 삭제가 완료됩니다. 다음과 같습니다.
+
+![삭제완료](https://user-images.githubusercontent.com/60593969/138593719-1ee7cce3-c2e9-46cf-a139-fa749bc155a8.png)

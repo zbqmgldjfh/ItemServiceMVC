@@ -23,7 +23,9 @@
     <hr class="my-4">
     <div>
         <table class="table">
-            <h2 class="text-center bg-success rounded-3 text-white w-25" th:if="${param.status}" th:text="'삭제 완료!'"></h2>
+            <div class="justify-content-center">
+                <h2 class="text-sm-center bg-success rounded-3 text-white w-25" th:if="${param.status}" th:text="'삭제 완료!'"></h2>
+            </div>
             <thead>
             <tr>
                 <th>ID</th>
