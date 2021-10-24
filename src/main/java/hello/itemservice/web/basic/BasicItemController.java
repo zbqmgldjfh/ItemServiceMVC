@@ -92,7 +92,7 @@ public class BasicItemController {
     public String deleteForm(@PathVariable Long itemId, Model model){
         Item item = itemRepository.findById(itemId);
         model.addAttribute("item", item);
-        return "/basic/deleteForm";
+        return "/basic/deleteConfirm";
     }
 
     @GetMapping("/{itemId}/delete")
