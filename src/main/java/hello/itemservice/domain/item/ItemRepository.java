@@ -34,6 +34,13 @@ public class ItemRepository {
         findItem.setQuantity(updateParam.getQuantity());
     }
 
+    public boolean delete(Long itemId){
+        if(itemId <= sequence){
+            store.remove(itemId);
+            return true;
+        }else return false;
+    }
+
     // test용
     public void clearStore(){
         store.clear();

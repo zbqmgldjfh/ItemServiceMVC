@@ -88,6 +88,24 @@ public class BasicItemController {
         return "redirect:/basic/items/{itemId}";
     }
 
+    @GetMapping("/{itemId}/delete/confirm")
+    public String deleteForm(@PathVariable Long itemId, Model model){
+        Item item = itemRepository.findById(itemId);
+        model.addAttribute("item", item);
+        return "/basic/deleteForm";
+    }
+
+    @GetMapping("/{itemId}/delete")
+    public String delete(@PathVariable Long itemId, RedirectAttributes redirectAttributes){
+        System.out.println("BasicItemController.delete");
+        if(itemRepository.delete(itemId)){
+            redirectAttributes.addAttribute("status", true);
+            return "redirect:/basic/items";
+        }else{
+            redirectAttributes.addAttribute("status", false);
+            return "redirect:/basic/items";
+        }
+    }
 
     // 테스트 용 데이터!
     @PostConstruct
